@@ -1,9 +1,71 @@
 from mail import mailer
 
 
-# def mailer(asunto, correos, nombres=None, empresas=None, sexos=None, mas=None, fem=None):
+nombres = ['Ignacio',
+			'Vicente',
+			'Rodrigo',
+			'Vicente',
+			'Darko',
+			'Hector',
+			'Fabiola',
+			'Eduardo',
+			'Hugo',
+			'Carla',
+			'Francisco',
+			'Iv&aacute;n',
+			'Cristian',
+			'Aldo']
 
-mailer(asunto='Prueba',
-	   correos=['example@gmail.com'], 
-	   nombres=['Pedro'],
-	   empresas= ['Monster Inc.'])
+correos = ['ignacio.diez@oxiquim.com',
+			'vicente.gambaro@oxiquim.com',
+			'rodrigo.saldias@masisa.com',
+			'vicente.vera@masisa.com',
+			'darkoretamal@gmail.com',
+			'hector.monroy@essbio.cl',
+			'fcifuentes@csh.cl',
+			'eduardo.bebin@inchalam.cl',
+			'hugo.garcia@inchalam.cl',
+			'carla.henriquez@inchalam.cl',
+			'francisco.acevedo@molycop.cl',
+			'iarevalo@asmar.cl',
+			'cmachucac@asmar.cl',
+			'aldconcha@udec.cl']
+
+empresas = ['OXIQUIM',
+			'OXIQUIM',
+			'Masisa',
+			'Masisa',
+			'Enap',
+			'Essbio',
+			'Huachipato',
+			'Inchalam',
+			'Inchalam',
+			'Inchalam',
+			'Molycop',
+			'ASMAR',
+			'ASMAR',
+			'Unidad de Data Science']
+
+sexos = [True, 
+		True,
+		True,
+		True,
+		True,
+		True,
+		False,
+		True,
+		True,
+		False,
+		True,
+		True,
+		True,
+		True]
+
+
+mailer(asunto= 'Ciclo de charlas Data Science',
+	   correos = correos, 
+	   nombres = nombres,
+	   empresas = empresas,
+	   sexos = sexos,
+	   mas='Estimado',
+	   fem='Estimada')
